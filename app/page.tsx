@@ -8,9 +8,11 @@ import Footer from "./_components/footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-    <Navbar></Navbar>
-    <Hero></Hero>
+    <div className="min-w-screen bg-zinc-50 font-sans">
+      <div className=""> 
+        <Navbar></Navbar>
+        <Hero></Hero>
+      </div>
     <Bio></Bio>
     <Services></Services>
     <Reviews></Reviews>
