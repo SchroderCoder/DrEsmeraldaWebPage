@@ -1,11 +1,16 @@
+import ReviewCard from "./reviewcard";
+
 export default function Reviews() {
   return (
-    <section>
+    <section className="bg-blue-100 pb-10" >
       <h3 className="text-center text-black text-4xl font-bold p-5">
         Mis clientes
       </h3>
-      <p>muy buena la neta</p>
-      <p>mató a mi perro pero curó mi homosexualidad 6/10</p>
+      <div className="flex items-center justify-center gap-5">
+        <ReviewCard></ReviewCard>
+        <ReviewCard></ReviewCard>
+        <ReviewCard></ReviewCard>
+      </div>
     </section>
   );
 } 

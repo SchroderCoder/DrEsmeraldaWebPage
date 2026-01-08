@@ -2,11 +2,26 @@ import Image from "next/image";
 
 export default function Ubicacion() {
   return (
-    <section id="Ubicacion" className="px-5 pb-5 flex flex-col items-center">
-      <h3 className="text-center text-black text-4xl font-bold p-5">
+    <section id="Ubicacion" className="px-5 pb-5 flex flex-col items-center ">
+      <h3 className="text-center text-black text-4xl font-bold p-5 pb-15">
         Ubicación
       </h3>
-      <div className="flex gap-10">
+      <div className="flex gap-35">
+        <iframe
+          frameBorder="0"
+          scrolling="no"
+          allowTransparency={true}
+          data-id="q8v2zvzda3"
+          title="Docplanner Booking Widget"
+          src="https://widgets.doctoralia.com.mx/doctor/widget/big/esmeralda-cobos-alfaro?customUtm=null&id=q8v2zvzda3&header=null&content=null&fullwidth=null&referer=https%3A%2F%2Fdrerickneurocirujano.com%2F&hide_branding=true&widget_position=bottom&opinion=true&saasonly=false&expand_calendar=false"
+          style={{
+            border: "none",
+            overflow: "hidden",
+            width: "30%",
+            height: "362px"
+          }}
+        />
+
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.847477808996!2d-100.40247650415455!3d20.58354265788209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35b2d25449f0d%3A0xc2d4e1969b496aef!2sHospital%20H%2B%20Quer%C3%A9taro!5e0!3m2!1ses-419!2smx!4v1767654367023!5m2!1ses-419!2smx"
           width={500}
@@ -17,7 +32,7 @@ export default function Ubicacion() {
           referrerPolicy="no-referrer-when-downgrade"
 
         />
-        <div className="font-bold text-[#505050]">
+        <div className="text-[#505050]">
           <ul className="[&>*]:flex">
             <li>
               Hospital H+
