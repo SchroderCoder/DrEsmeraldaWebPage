@@ -1,21 +1,22 @@
-export default function ReviewCard() {
+type ReviewCardProps = {
+  
+  text:string, 
+  title:string
+}
+
+export default function ReviewCard({text , title }:ReviewCardProps ){
   return (
-    <section className="max-w-75 rounded-2xl bg-white shadow-lg p-6 border border-gray-100">
-      
-      {/* Header */}
+    <section className="max-w-75 h-75 min-w-75 rounded-2xl bg-white  p-6 border border-gray-100">
       <div className="flex items-center gap-5">
         <img
           className="w-16 h-16 rounded-full object-cover "
-          alt="Esmeralda"
-          src="hola.png"
+          alt="foto-perfil"
+          src="user.png"
         />
-
         <div>
           <h3 className="text-lg font-semibold text-gray-900">
-            Jose Peblo
+            {title}
           </h3>
-
-          {/* Stars */}
           <div className="flex gap-1 mt-1">
             {[...Array(5)].map((_, i) => (
               <svg
@@ -29,14 +30,18 @@ export default function ReviewCard() {
               </svg>
             ))}
           </div>
+          <img
+            className="w-20 pt-2"
+            alt="logo"
+            src="logo-doctoralia.png"
+          />
         </div>
       </div>
 
-      {/* Review text */}
-      <p className="mt-4 text-gray-700 leading-relaxed">
-        Antes tenía muchas dudas y la experiencia fue excelente. 
-        Muy recomendado, atención profesional y resultados increíbles.
-      </p>
+      <p className="mt-4 text-gray-700 leading-relaxed line-clamp-6">
+  {text}
+</p>
+
     </section>
   );
 }

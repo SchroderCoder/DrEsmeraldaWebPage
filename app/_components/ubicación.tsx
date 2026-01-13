@@ -25,7 +25,7 @@ export default function Ubicacion() {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.847477808996!2d-100.40247650415455!3d20.58354265788209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35b2d25449f0d%3A0xc2d4e1969b496aef!2sHospital%20H%2B%20Quer%C3%A9taro!5e0!3m2!1ses-419!2smx!4v1767654367023!5m2!1ses-419!2smx"
           width={500}
-          height={400}
+          height={340}
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
